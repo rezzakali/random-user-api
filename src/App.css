@@ -12,7 +12,13 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.App button {
+  background-color: azure;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 2px;
+  outline: none;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -34,5 +40,40 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+/* user Div */
+.userDiv {
+  width: 25%;
+  border-radius: 5px;
+  padding: 15px;
+  margin: auto;
+}
+.userDiv img {
+  width: auto;
+  border-radius: 50%;
+}
+.userDiv h4 {
+  margin-top: 10px;
+}
+.contactInfo {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+ul li {
+  list-style: none;
+  justify-content: space-between;
+  display: flex;
+}
+ul li span {
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+}
+
+@media screen and (max-width: 768px) {
+  .userDiv {
+    width: 90%;
   }
 }
